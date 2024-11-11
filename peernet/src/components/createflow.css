@@ -1,0 +1,255 @@
+
+.description {
+    margin-top: 3%;
+  }
+  
+  .mb-3 {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  
+  .calculation {
+    border: 2px solid green;
+    padding: 2.5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+  }
+  
+  .connectedWallet {
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 3%;
+  }
+  
+  #connectWallet {
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 3%;
+  }
+
+
+
+  button {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    background: #e62222;
+   }
+   
+   button, button span {
+    -webkit-transition: 200ms;
+    transition: 200ms;
+   }
+   
+   button .text {
+    -webkit-transform: translateX(35px);
+        -ms-transform: translateX(35px);
+            transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+   }
+   
+   button .icon {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    -webkit-transform: translateX(110px);
+        -ms-transform: translateX(110px);
+            transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+   }
+   
+   button svg {
+    width: 15px;
+    fill: #eee;
+   }
+   
+
+   button:hover .text {
+    color: transparent;
+   }
+   
+   button:hover .icon {
+    width: 150px;
+    border-left: none;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+   }
+   
+   button:focus {
+    outline: none;
+   }
+   
+   button:active .icon svg {
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
+   }
+
+
+   /* ---------------------------------toggle button animation---------------------- */
+   .switch {
+    margin-left: 50px;
+    margin-top: 30px;
+    --circle-dim: 4.56em;
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 16.5em;
+    height: 6em;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f5aeae;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50px;
+  }
+  
+  .slider-card {
+    position: absolute;
+    content: "";
+    height: var(--circle-dim);
+    width: var(--circle-dim);
+    border-radius: 80px;
+    left: 0.9em;
+    bottom: 0.9em;
+    -webkit-transition: .4s;
+    transition: .4s;
+    pointer-events: none;
+  }
+  
+  .slider-card-face {
+    position: absolute;
+    inset: 0;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+    border-radius: 50%;
+    -webkit-transition: .4s transform;
+    transition: .4s transform;
+  }
+  
+  .slider-card-front {
+    background-color: #DC3535;
+  }
+  
+  .slider-card-back {
+    background-color: #379237;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  
+  input:checked ~ .slider-card .slider-card-back {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  
+  input:checked ~ .slider-card .slider-card-front {
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+  }
+  
+  input:checked ~ .slider-card {
+    -webkit-transform: translateX(10em);
+        -ms-transform: translateX(10em);
+            transform: translateX(10em);
+  }
+  
+  input:checked ~ .slider {
+    background-color: #9ed99c;
+  }
+
+
+  /* -------------------------------range slider------------------------------- */
+  
+  
+/* Set background color for RangeSlider */
+.rheostat {
+  background-color: #ddd;
+}
+
+/* Set color for RangeSlider track and thumb */
+.rheostat-background {
+  background-color: #252526;
+}
+.rheostat-handle {
+  background-color: #252526;
+}
+
+/* Set font color for RangeSlider labels */
+.rheostat-value {
+  color: #ddd;
+}
+
+/* Set style for RangeSlider tooltip */
+.rheostat-tooltip {
+  background-color: #333;
+  color: #ddd;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* Set style for RangeSlider tooltip arrow */
+.rheostat-tooltip:before {
+  border-bottom-color: #333;
+}
+
+/* Set style for RangeSlider tooltip arrow on hover */
+.rheostat-tooltip:hover:before {
+  border-bottom-color: transparent;
+  border-top-color: #333;
+}
+.data{
+  margin-left: 100px;
+  margin-bottom: 20px;
+  padding: 30px;
+  width: max-content;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+}
+
+.speed{
+  color: white;
+  font-size:xx-large;
+}
